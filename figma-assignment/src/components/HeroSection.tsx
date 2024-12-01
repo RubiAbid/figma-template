@@ -1,13 +1,16 @@
 import React from 'react';
+import Image from 'next/image';
 
 const HeroSection = () => {
   return (
     <div className="relative h-screen">
-      <img
-        src="/image (3).png" // Path to your image
-        alt="Hero Background"
-        className="absolute top-0 left-0 w-full h-full object-cover"
-      />
+     <Image
+  src="/image (3).png" // Path to your image
+  alt="Hero Background"
+  className="absolute top-0 left-0 w-full h-full object-cover"
+  width={742}  // Specify the width of the image
+  height={1000} // Specify the height of the image
+/>
 
       <div className="absolute h-[164px] left-0 right-[2px] top-0 flex items-center justify-between px-8">
         {/* Site name */}
@@ -36,7 +39,7 @@ const HeroSection = () => {
       Fresh Pick
 </div>
 <div className="w-[844px] h-[34px] text-white text-center text-[24px] font-medium leading-[140%] flex justify-center items-center">
-  "Freshly Picked, Naturally Delicious!"
+&rdquo;Freshly Picked, Naturally Delicious!&rdquo;
   <br />
   FreshPick offers a variety of premium, handpicked fruits, delivered straight to your door. Enjoy the taste of freshness with every bite!
 </div>
